@@ -1,6 +1,9 @@
 <title>周毅小六爻 · 铜钱摇卦与小六壬</title>
 <meta name="description" content="A quiet study for classical Chinese divination: cast three coins for a Book of Changes hexagram, count an hourly Xiao Liu Ren reading, and browse all 64 hexagrams. 周毅小六爻。">
 <meta name="theme-color" content="#130e0a">
+<link rel="canonical" href="https://wenjianzhang70-dot.github.io/zhouyi-xiaoliuyao/">
+<meta property="og:url" content="https://wenjianzhang70-dot.github.io/zhouyi-xiaoliuyao/"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Zhou Yi Xiao Liu Yao 周毅小六爻","url":"https://wenjianzhang70-dot.github.io/zhouyi-xiaoliuyao/","inLanguage":["en","zh-CN"],"description":"Classical Chinese divination for cultural experience and self-reflection: three-coin Book of Changes hexagrams, Xiao Liu Ren hourly reading, and all 64 hexagrams."}</script>
 <meta property="og:type" content="website"><meta property="og:title" content="Zhou Yi Xiao Liu Yao · 周毅小六爻">
 <meta property="og:description" content="Cast coins, count the hours, read the Book of Changes. A quiet study of classical Chinese divination.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23130e0a'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23c9a86a' stroke-width='3'/%3E%3Crect x='26' y='26' width='12' height='12' fill='none' stroke='%23c9a86a' stroke-width='3'/%3E%3C/svg%3E">
@@ -322,6 +325,7 @@ body:not(.en) .btn-ink{font-size:23px}
 body:not(.en) .reading h3{font-size:27px}
 body:not(.en) .progress{font-size:22px}
 @media (max-width:640px){.sheet p,.sheet li{font-size:17px}body.en .sheet p,body.en .sheet li{font-size:18px}}
+.seo{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -380,6 +384,12 @@ body:not(.en) .progress{font-size:22px}
 <button class="snd lang" id="lang" aria-label="Language"></button>
 <button class="snd" id="snd" aria-pressed="true" aria-label="声音 / Sound"><span>声</span></button>
 <div class="grain" aria-hidden="true"></div>
+<main class="seo"><h1>Zhou Yi Xiao Liu Yao 周毅小六爻</h1>
+<p>A quiet study for classical Chinese divination and self-reflection. Cast three coins to receive a Book of Changes (I Ching, Zhou Yi) hexagram with moving lines, count an hourly Xiao Liu Ren reading by lunar month, day and double-hour, and browse all 64 hexagrams with the classical judgment and a plain-language note. Available in English and 中文.</p>
+<h2>铜钱摇卦 · Coin divination</h2><p>三枚铜钱，六次抛掷，得本卦与变卦。Six tosses of three coins give a primary hexagram and a resulting hexagram.</p>
+<h2>时辰起课 · Xiao Liu Ren hourly reading</h2><p>从大安起，依农历月、日、时辰数宫。Count from Da An by lunar month, day and double-hour.</p>
+<h2>卦例解析 · The 64 hexagrams</h2><p>六十四卦卦辞、象辞与白话说明。Judgment, image and plain-language notes for all 64 hexagrams.</p>
+<p>仅供传统文化体验与自我观察，不构成任何决策建议。For cultural experience and self-reflection only; not advice of any kind.</p></main>
 <noscript><p style="position:fixed;inset:40% 10% auto;text-align:center;color:#e4d9c1">This page needs JavaScript. 请开启 JavaScript。</p></noscript>
 <p class="pan gone" id="pan" data-zh="← 左右滑动，看看案上之物 →" data-en="← Swipe to look around the desk →">← 左右滑动，看看案上之物 →</p>
 
@@ -766,7 +776,7 @@ const gPlain=i=>en()?EN_G[i][2]:G[i][5];
 const lineName=(pos,yang)=>en()?`Line ${pos+1} (${yang?'yang':'yin'})`:yaoName(pos,yang);
 const num=n=>en()?String(n):cnNum(n);
 const HITLBL={'o-coins':['铜钱：铜钱摇卦','Coins: cast a hexagram'],'o-burner':['香炉：时辰起课','Incense burner: hourly reading'],'o-book':['《周易》古书：卦例解析','Book of Changes: the 64 hexagrams'],'o-paper':['卦纸与毛笔：周毅解卦','Paper and brush: a reading with Zhou Yi'],'o-painting':['山水画：了解小六爻','Landscape painting: about this site']};
-const CONTACT=[{k:['邮箱','Email'],u:'wenjianzhang',d:'gmail.com'}]; // split so simple scrapers don't harvest the address
+const CONTACT=[{k:['邮箱','Email'],u:'wenjianzhang70',d:'gmail.com'}]; // split so simple scrapers don't harvest the address
 const REPLY=['','']; // e.g. ['一至三日内回复','Replies within 1–3 days']
 function applyLang(){
   const E=en();document.documentElement.lang=E?'en':'zh-CN';document.body.classList.toggle('en',E);
