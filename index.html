@@ -975,7 +975,7 @@ function runXlr(){
 
 const snd=$('#snd');const syncSnd=()=>{snd.classList.toggle('off',!AU.on);snd.setAttribute('aria-pressed',AU.on)};
 snd.onclick=()=>{AU.toggle();syncSnd()};syncSnd();
-LANG=store.get('xly-lang')||((navigator.language||'').toLowerCase().startsWith('zh')?'zh':'en');
+LANG=store.get('xly-lang')||'en';
 $('#lang').onclick=()=>{LANG=en()?'zh':'en';store.set('xly-lang',LANG);shut();applyLang();AU.tick()};
 applyLang();
 /* drifting dust in the lamplight */
